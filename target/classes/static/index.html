@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chatty</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div id="username-page">
+            <div class="username-page-container">
+                <h1 class="title">Veuillez taper votre nom d'utilisateur pour accéder à Chatty</h1>
+                <form id="usernameForm" name="usernameForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="accent username-submit">Accéder à Chatty</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="chat-rooms" class="hidden">
+            <div class="username-page-container">
+                <h1 class="title">Chats en cours !</h1>
+                <form id="roomsform" name="roomsform">
+                    <ul id="roomsarea">
+        
+                    </ul>
+                    <div class="form-group">
+                        <button type="submit" class="accent username-submit">Démarrer un nouveau chat</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="chat-page" class="hidden">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Bienvenue Sur Chatty</h2>
+                </div>
+                <div class="connecting">
+                    Connexion...
+                </div>
+                <ul id="messageArea">
+        
+                </ul>
+                <form id="messageForm" name="messageForm">
+                    <div class="form-group">
+                        <div class="input-group clearfix">
+                            <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+                            <button type="submit" class="primary">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--<div class="chatbot">
+            <header>
+                <h2>ChattyBot</h2>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Bonjour !<br> Comment puis-je vous aider?</p>
+
+                </li>
+                <li class="chat outgoing">
+                    <p>Lorem ipsum</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Votre Message..."></textarea>
+                <span id="send-btn" class="material-symbols-outlined">Envoyer</span>
+            </div>
+        </div>-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+
+</html>
